@@ -2,28 +2,28 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development", // Set the mode to 'development'
-  entry: "./src/index.js", // Entry point of your application
+  mode: "development",
+  entry: "./src/index.js",
   output: {
-    filename: "bundle.js", // Output bundle file
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"), // Output directory
-    clean: true, // Clean the output directory before each build
+    clean: true,
   },
   module: {
     rules: [
       {
-        test: /\.css$/, // Rule for CSS files
+        test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i, // Rule for images
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html", // Template HTML file
+      template: "./src/index.html",
     }),
   ],
   devServer: {
