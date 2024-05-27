@@ -4,7 +4,7 @@ function home() {
   const contentDiv = document.querySelector(".content");
 
   const headerElement = document.createElement("h1");
-  headerElement.innerHTML = "Fachada";
+  headerElement.innerHTML = "testing home";
   contentDiv.appendChild(headerElement);
 
   const myImage = document.createElement("img");
@@ -14,7 +14,5 @@ function home() {
 
   return contentDiv;
 }
-
-home();
 
 export { home };

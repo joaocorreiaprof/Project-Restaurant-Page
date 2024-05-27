@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&family=Sevillana&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,28 +9,65 @@
 .mainContent {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100vh;
   width: 100vw;
-  background-color: white;
+  background-image: url("./images/bar.jpg");
+  background-size: cover;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: transparent;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #5c4938;
+  border-radius: 15px;
+  background-color: #f2ede9;
+  padding: 20px;
+}
+
+.sevillana-regular {
+  font-family: "Sevillana", "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+  font-size: 50px;
 }
 
 nav {
   display: flex;
-  background-color: black;
 }
+
+button {
+  font-family: "Sevillana", "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: 550;
+  padding: 7px;
+  margin-top: 5px;
+  margin-right: 6px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(242, 237, 233, 0.3);
+}
+
+button:hover {
+  background-color: #f2ede9;
+  font-weight: 600;
+}
+
 .content {
   color: white;
   display: flex;
-  background-color: #1c1917;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .inicialImage {
   height: 300px;
   width: 300px;
-}
-
-footer {
-  color: white;
-  background-color: black;
 }
