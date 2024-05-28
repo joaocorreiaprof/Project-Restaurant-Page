@@ -1,18 +1,13 @@
-import initialPageImage from "./images/restImage.jpg";
-
 function home() {
   const contentDiv = document.querySelector(".content");
+  const homeContent = document.createElement("div");
+  homeContent.classList.add("homeContent");
+  contentDiv.appendChild(homeContent);
 
-  const headerElement = document.createElement("h1");
-  headerElement.innerHTML = "testing home";
-  contentDiv.appendChild(headerElement);
+  const welcomeMessage = document.createElement("h1");
+  welcomeMessage.classList.add("welcomeMessage");
+  welcomeMessage.innerHTML = "Welcome";
 
-  const myImage = document.createElement("img");
-  myImage.src = initialPageImage;
-  myImage.classList.add("inicialImage");
-  contentDiv.appendChild(myImage);
-
-  return contentDiv;
+  homeContent.appendChild(welcomeMessage);
 }
-
 export { home };
