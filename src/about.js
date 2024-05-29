@@ -33,28 +33,34 @@ function about() {
   aboutText.appendChild(message);
 
   //right div
-
   const rightDiv = document.createElement("div");
   rightDiv.classList.add("rightDiv");
   aboutContent.appendChild(rightDiv);
 
+  const rightInfo = document.createElement("div");
+  rightInfo.classList.add("rightInfo");
+  rightDiv.appendChild(rightInfo);
+
   const contactInfo = document.createElement("h2");
   contactInfo.classList.add("contactInfo");
   contactInfo.innerHTML = "Contact Information";
+
   const phoneInfo = document.createElement("p");
   phoneInfo.innerHTML = "Phone Number: +351 000 000 000";
   phoneInfo.classList.add("phoneInfo");
+
   const emailInfo = document.createElement("p");
   emailInfo.innerHTML = "Email: fachada@fado&sabores.com";
   emailInfo.classList.add("emailInfo");
+
   const addressInfo = document.createElement("p");
   addressInfo.innerHTML =
     "Address: Rua da Melodia, nº 7, Aldeia do Fado Feliz, 3720-123, Portugal";
 
-  rightDiv.appendChild(contactInfo);
-  rightDiv.appendChild(phoneInfo);
-  rightDiv.appendChild(emailInfo);
-  rightDiv.appendChild(addressInfo);
+  rightInfo.appendChild(contactInfo);
+  rightInfo.appendChild(phoneInfo);
+  rightInfo.appendChild(emailInfo);
+  rightInfo.appendChild(addressInfo);
 }
 
 export { about };
