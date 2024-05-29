@@ -5,7 +5,7 @@ import { about } from "./about";
 
 const content = document.querySelector(".content");
 const buttons = document.querySelectorAll("button");
-menu();
+home();
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (btn.classList.contains("homeBtn")) {
