@@ -19,7 +19,7 @@ JavaScript Modules: Understanding ES6 modules and how to use them for better cod
 CSS Styling: Custom CSS styles are used to enhance the appearance of the page elements.
 Responsiveness
 
-# Please note that the project is not designed to be responsive or optimized for mobile devices, as those concepts have not been covered yet in the curriculum. The layout is best viewed on desktop screens.
+## Please note that the project is not designed to be responsive or optimized for mobile devices, as those concepts have not been covered yet in the curriculum. The layout is best viewed on desktop screens.
 
 # How to Contribute
 This project is intended for learning purposes. However, if you'd like to contribute, feel free to fork the repository and make any changes you see fit. Pull requests are welcome.
